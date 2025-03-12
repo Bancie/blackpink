@@ -1,17 +1,21 @@
-class Company {
-    String name;
-  
-    // public constructor
-    private Company() {
-      name = "Programiz";
-    }
-}
-  
 class halagogi {
-    public static void main(String[] args) {
+
+  int sum;
+
+
+  halagogi(int arg1, int arg2) {
+    this.sum = arg1 + arg2;
+  }
   
-      // object is created in another class
-      Company obj = new Company();
-      System.out.println("Company name = " + obj.name);
-    }
+  // halagogi() {
+  //   this(5, 2);
+  // }
+  void display() {
+    System.out.println("Sum is: " + sum);
+  }
+
+  public static void main(String[] args) {
+    halagogi obj = new halagogi(5,2);
+    obj.display();
+  }
 }
