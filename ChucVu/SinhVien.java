@@ -1,6 +1,5 @@
-package Quanly;
+package ChucVu;
 import Quanly.NhanSu;
-
 
 public class SinhVien extends NhanSu {
     
