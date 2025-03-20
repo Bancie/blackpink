@@ -4,19 +4,19 @@ import Quanly.NhanSu;
 public class SinhVien extends NhanSu {
     
     public String diem;
-    
-    SinhVien(String ten, int namsinh, String diem) {
-        super(ten, namsinh);
+
+    SinhVien(String ten, String ngheNghiep, int namsinh, String phoneNumber, String diem) {
+        super(ten, ngheNghiep, namsinh, phoneNumber);
         this.diem = diem;
     }
 
     @Override
     public void thongtin() {
-       System.out.println("Ten: " + ten + " Nam sinh: " + namsinh + " Diem: " + diem);
+       System.out.println("Ten: " + ten + " Nghe nghiep: " + ngheNghiep + " Nam sinh: " + namsinh + " Sdt: " + getPhoneNumber() + " Diem: " + diem);
     }
 
     public static void main(String[] args) {
-        SinhVien ns = new SinhVien("Yen", 2003, "30");
-        ns.thongtin();
+        SinhVien sv = new SinhVien("Yen", "Sinh Vien", 2003, "80329434", "30");
+        sv.thongtin();
     }
 }
