@@ -15,6 +15,10 @@ public class SinhVien extends NhanSu {
        System.out.println("Ten: " + ten + " Nghe nghiep: " + ngheNghiep + " Nam sinh: " + namsinh + " Sdt: " + getPhoneNumber() + " Diem: " + diem);
     }
 
+    
+}
+
+class SinhVienTest {
     public static void main(String[] args) {
         SinhVien sv = new SinhVien("Yen", "Sinh Vien", 2003, "80329434", "30");
         sv.thongtin();

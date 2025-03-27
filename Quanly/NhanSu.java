@@ -14,8 +14,15 @@ public class NhanSu {
         this.phoneNumber = phoneNumber;
     }
 
+    public NhanSu(NhanSu original) {
+        this.ten = original.ten;
+        this.ngheNghiep = original.ngheNghiep;
+        this.namsinh = original.namsinh;
+        this.phoneNumber = phoneNumber;
+    }
+
     public String getPhoneNumber() {
-        return phoneNumber;
+        return this.phoneNumber;
     }
 
 
@@ -26,9 +33,15 @@ public class NhanSu {
     public void thongtin() {
        System.out.println("Ten: " + ten + " Nam sinh: " + namsinh + " Sdt: " + phoneNumber);
     }
+}
 
+class NhanSuTest {
     public static void main(String[] args) {
         NhanSu tt = new NhanSu("Nguyen Thi Yen", "Sinh Vien", 2003, "0832946009");
+        NhanSu tt2 = new NhanSu(tt);
         tt.thongtin();
+        tt2.setPhoneNumber("696969");
+        tt2.thongtin();
+        System.out.println(tt2.getPhoneNumber());
     }
 }
