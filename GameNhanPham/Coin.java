@@ -8,9 +8,9 @@ public class Coin {
         random = new Random();
     }
 
-    public String randomDongXu() {
+    public String flip() {
         /*
-         * Method: randomDongXu
+         * Method: flip
          * Description: Quang dong xu ngau nhien.
          *      Parameter: NULL
          *      Return: String
@@ -22,6 +22,6 @@ public class Coin {
 class Test {
     public static void main(String[] args) {
         Coin bc = new Coin();
-        System.out.println(bc.randomDongXu());
+        System.out.println(bc.flip());
     }
 }
