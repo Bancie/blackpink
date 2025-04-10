@@ -1,4 +1,7 @@
 package ChucVu;
+import java.util.ArrayList;
+import java.util.List;
+
 import Quanly.NhanSu;
 
 public class SinhVien extends NhanSu {
@@ -20,7 +23,9 @@ public class SinhVien extends NhanSu {
 
 class SinhVienTest {
     public static void main(String[] args) {
-        SinhVien sv = new SinhVien("Yen", "Sinh Vien", 2003, "80329434", "30");
-        sv.thongtin();
+        // SinhVien sv = new SinhVien("Yen", "Sinh Vien", 2003, "80329434", "30");
+        // sv.thongtin();
+        List<String> students = new ArrayList<>();
+        
     }
 }
