@@ -10,9 +10,10 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Brain.IQ",
-            "database": "Banci.Life",
-            "username": "bancie"
+            "name": "brainIQ",
+            "database": "personalLife",
+            "username": "Bancie",
+            "password": "chibang0309@"
         }
     ]
 }
