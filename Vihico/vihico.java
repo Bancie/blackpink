@@ -1,6 +1,6 @@
-package Vehicle_;
+package Vihico;
 
-public abstract class Vehicle {
+public abstract class vihico {
     protected String brand;
     protected double speed;
 
@@ -17,7 +17,7 @@ public abstract class Vehicle {
     }
 }
 
-class car extends Vehicle {
+class car extends vihico {
     public double accelerate(double value) {
         return speed + value;
     }
