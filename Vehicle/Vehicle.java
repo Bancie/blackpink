@@ -1,4 +1,6 @@
 package Vehicle;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Vehicle {
     String name;
@@ -66,11 +68,19 @@ class Truck extends Vehicle {
     }
 }
 
-class testVihicle {
+class testVehicle {
     public static void main(String[] args) {
-        Vehicle car = new Car();
-        car.printInfo();
-        car.drive();
-        System.out.println(car.getFuelEfficiency());
+        List <Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(new Car());
+        vehicles.add(new Bike());
+        vehicles.add(new Truck());
+
+        Vehicle v = vehicles.get(0);
+        v.drive();
+        
+        for (Vehicle i : vehicles) {
+            i.drive();
+            i.printInfo();
+        }
     }
 }
