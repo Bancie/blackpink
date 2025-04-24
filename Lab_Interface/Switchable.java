@@ -1,6 +1,6 @@
 package Lab_Interface;
 
-interface Switchable {
+public interface Switchable {
     void turnOn();
     void turnOff();
 }
