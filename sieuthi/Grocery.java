@@ -22,3 +22,10 @@ public class Grocery implements Billable, Showable, Trackable {
     }
     // public int getUnitsSold();
 }
+
+class testGrocery {
+    public static void main(String[] args) {
+        Grocery g = new Grocery("A", 3, 5);
+        g.showDetails();
+    }
+}
