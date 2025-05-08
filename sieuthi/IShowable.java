@@ -1,5 +1,5 @@
 package sieuthi;
 
-public interface Showable {
+public interface IShowable {
     public void showDetails();
 }

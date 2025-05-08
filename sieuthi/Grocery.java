@@ -26,6 +26,10 @@ public class Grocery implements IBillable, ITrackable, IShowable {
     public int getUnitsSold() {
         return this.unitsSold;
     }
+
+    public double getpricePerUnit () {
+        return this.pricePerUnit;
+    }
 }
 
 class testGrocery {

@@ -13,11 +13,11 @@ public class Stationery implements IBillable, ITrackable {
     }
 
     @Override
-    public double calculateTotalunitPrice() {
+    public double calculateTotalPrice() {
         return this.unitPrice * this.itemsSold;    
     }
     
-    @Override
+    @Override 
     public int getUnitsSold() {
         return this.itemsSold;
     }
