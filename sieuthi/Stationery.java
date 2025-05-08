@@ -1,6 +1,6 @@
 package sieuthi;
 
-public class Stationery implements Billable, Trackable {
+public class Stationery implements IBillable, ITrackable {
 
     private String itemName;
     private double unitPrice;
@@ -12,12 +12,9 @@ public class Stationery implements Billable, Trackable {
         this.itemsSold = itemsSold;
     }
 
+    @Override
     public double calculateTotalunitPrice() {
         return this.unitPrice * this.itemsSold;    
-    }
-    
-    public void showDetails() {
-        System.out.println("Product: " + this.itemName + ", unitPrice: " + this.unitPrice + ", Sold: " + this.itemsSold);
     }
     
     @Override

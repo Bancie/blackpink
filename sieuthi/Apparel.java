@@ -1,6 +1,6 @@
 package sieuthi;
 
-public class Apparel implements Billable, Showable {
+public class Apparel implements IBillable, IShowable {
 
     private String brand;
     private double price;
@@ -12,14 +12,15 @@ public class Apparel implements Billable, Showable {
         this.category = category;
     }
 
+    @Override
     public double calculateTotalPrice() {
         return price;    
     }
     
+    @Override
     public void showDetails() {
         System.out.println("Product: " + this.brand + ", Price: " + this.price + ", Sold: " + this.category);
     }
-    // public int getcategory();
 }
 
 class testApparel {
