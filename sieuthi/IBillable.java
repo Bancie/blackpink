@@ -1,5 +1,5 @@
 package sieuthi;
 
-public interface Billable {
+public interface IBillable {
     public double calculateTotalPrice();
 }

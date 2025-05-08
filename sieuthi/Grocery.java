@@ -1,6 +1,6 @@
 package sieuthi;
 
-public class Grocery implements Billable, Showable, Trackable {
+public class Grocery implements IBillable, ITrackable, IShowable {
 
     private String productName;
     private double pricePerUnit;
@@ -12,19 +12,25 @@ public class Grocery implements Billable, Showable, Trackable {
         this.unitsSold = unitsSold;
     }
 
+    @Override
     public double calculateTotalPrice() {
         return pricePerUnit * unitsSold;    
     }
     
+    @Override
     public void showDetails() {
         System.out.println("Product: " + this.productName + ", Price: " + this.pricePerUnit + ", Sold: " + this.unitsSold);
     }
-    // public int getUnitsSold();
+    
+    @Override
+    public int getUnitsSold() {
+        return this.unitsSold;
+    }
 }
 
 class testGrocery {
     public static void main(String[] args) {
-        Grocery g = new Grocery("A", 3, 5);
+        Grocery g = new Grocery("Rice", 20000, 50);
         g.showDetails();
     }
 }
