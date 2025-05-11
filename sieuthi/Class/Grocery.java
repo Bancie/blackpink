@@ -18,7 +18,7 @@ public class Grocery implements IBillable, ITrackable, IShowable {
 
     @Override
     public double calculateTotalPrice() {
-        return pricePerUnit * unitsSold;    
+        return this.pricePerUnit * this.unitsSold;    
     }
     
     @Override
