@@ -1,4 +1,8 @@
-package sieuthi;
+package sieuthi.Class;
+
+import sieuthi.Interface.IBillable;
+import sieuthi.Interface.IShowable;
+import sieuthi.Interface.ITrackable;
 
 public class Grocery implements IBillable, ITrackable, IShowable {
 
@@ -19,7 +23,7 @@ public class Grocery implements IBillable, ITrackable, IShowable {
     
     @Override
     public void showDetails() {
-        System.out.println("Product: " + this.productName + ", Price: " + this.pricePerUnit + ", Sold: " + this.unitsSold);
+        System.out.println("Product: " + this.productName + ", Price: " + this.pricePerUnit);
     }
     
     @Override
@@ -27,14 +31,7 @@ public class Grocery implements IBillable, ITrackable, IShowable {
         return this.unitsSold;
     }
 
-    public double getpricePerUnit () {
-        return this.pricePerUnit;
-    }
-}
-
-class testGrocery {
-    public static void main(String[] args) {
-        Grocery g = new Grocery("Rice", 20000, 50);
-        g.showDetails();
+    public String getProductName () {
+        return this.productName;
     }
 }

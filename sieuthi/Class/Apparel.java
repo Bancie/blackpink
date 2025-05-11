@@ -1,4 +1,7 @@
-package sieuthi;
+package sieuthi.Class;
+
+import sieuthi.Interface.IBillable;
+import sieuthi.Interface.IShowable;
 
 public class Apparel implements IBillable, IShowable {
 
@@ -20,6 +23,10 @@ public class Apparel implements IBillable, IShowable {
     @Override
     public void showDetails() {
         System.out.println("Product: " + this.brand + ", Price: " + this.price + ", Sold: " + this.category);
+    }
+
+    public String getBrand() {
+        return this.brand;
     }
 }
 

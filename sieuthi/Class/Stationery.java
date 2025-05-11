@@ -1,4 +1,7 @@
-package sieuthi;
+package sieuthi.Class;
+
+import sieuthi.Interface.IBillable;
+import sieuthi.Interface.ITrackable;
 
 public class Stationery implements IBillable, ITrackable {
 
@@ -20,6 +23,10 @@ public class Stationery implements IBillable, ITrackable {
     @Override 
     public int getUnitsSold() {
         return this.itemsSold;
+    }
+
+    public String getItemName() {
+        return this.itemName;
     }
 }
 

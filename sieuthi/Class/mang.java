@@ -1,7 +1,7 @@
-package sieuthi;
+package sieuthi.Class;
 import java.util.ArrayList;
 
-public class danhsach {
+public class mang {
     protected ArrayList <Grocery> ds = new ArrayList<>();
 
     public void them(Grocery a) {
@@ -20,7 +20,7 @@ public class danhsach {
 
 class testds {
     public static void main(String[] args) {
-        danhsach d = new danhsach();
+        mang d = new mang();
         Grocery t1 = new Grocery("a", 4, 2);
         Grocery t2 = new Grocery("b", 9, 2);
         d.them(t1);
