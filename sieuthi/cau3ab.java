@@ -35,9 +35,9 @@ class nhan <T1 extends ITrackable & IShowable, T2 extends ITrackable> {
 
 public class cau3ab {
     public static void main(String[] args) {
-        nhan<Grocery, Stationery> n = new nhan<>();
-        Grocery grocery = new Grocery("keo", 3000, 550);
-        Stationery stationery = new Stationery("Viet", 6000, 30);
+        nhan n = new nhan();
+        ITrackable grocery = new Grocery("keo", 3000, 550);
+        ITrackable stationery = new Stationery("Viet", 6000, 300);
         n.themGrocery(grocery);
         n.themStationery(stationery);
         n.show();
