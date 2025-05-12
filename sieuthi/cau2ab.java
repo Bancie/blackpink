@@ -7,9 +7,9 @@ import java.util.List;
 public class cau2ab {
     public static void main(String[] args) {
         List <IBillable> sp = new ArrayList<>();
-        Grocery grocery = new Grocery("keo", 3000, 50);
-        Apparel apparel = new Apparel("PNJ", 1000000, "bong tai");
-        Stationery stationery = new Stationery("Viet", 6000, 32);
+        IBillable grocery = new Grocery("keo", 3000, 50);
+        IBillable apparel = new Apparel("PNJ", 1000000, "bong tai");
+        IBillable stationery = new Stationery("Viet", 6000, 32);
         sp.add(grocery);
         sp.add(apparel);
         sp.add(stationery);

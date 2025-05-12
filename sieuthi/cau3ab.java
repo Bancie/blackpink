@@ -6,7 +6,7 @@ import sieuthi.Class.Grocery;
 import sieuthi.Class.Stationery;
 import sieuthi.Interface.IShowable;
 
-class nhan <T1 extends ITrackable & IShowable, T2 extends ITrackable & IShowable> {
+class nhan <T1 extends ITrackable & IShowable, T2 extends ITrackable> {
     private List <T1> ds1 = new ArrayList<>();
     private List <T2> ds2 = new ArrayList<>();
 
@@ -26,7 +26,8 @@ class nhan <T1 extends ITrackable & IShowable, T2 extends ITrackable & IShowable
         }
         for (T2 i : ds2) {
             if (i.getUnitsSold() > 100) {
-                i.showDetails();
+                Stationery isub = (Stationery) i;
+                isub.showDetails();
             }
         }
     }
@@ -36,7 +37,7 @@ public class cau3ab {
     public static void main(String[] args) {
         nhan<Grocery, Stationery> n = new nhan<>();
         Grocery grocery = new Grocery("keo", 3000, 550);
-        Stationery stationery = new Stationery("Viet", 6000, 330);
+        Stationery stationery = new Stationery("Viet", 6000, 30);
         n.themGrocery(grocery);
         n.themStationery(stationery);
         n.show();
