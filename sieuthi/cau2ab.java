@@ -1,11 +1,8 @@
 package sieuthi;
+import sieuthi.Class.*;
+import sieuthi.Interface.IBillable;
 import java.util.ArrayList;
 import java.util.List;
-
-import sieuthi.Class.Apparel;
-import sieuthi.Class.Grocery;
-import sieuthi.Class.Stationery;
-import sieuthi.Interface.IBillable;
 
 public class cau2ab {
     public static void main(String[] args) {

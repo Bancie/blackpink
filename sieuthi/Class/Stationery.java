@@ -1,9 +1,10 @@
 package sieuthi.Class;
 
 import sieuthi.Interface.IBillable;
+import sieuthi.Interface.IShowable;
 import sieuthi.Interface.ITrackable;
 
-public class Stationery implements IBillable, ITrackable {
+public class Stationery implements IBillable, ITrackable, IShowable {
 
     private String itemName;
     private double unitPrice;
@@ -27,6 +28,11 @@ public class Stationery implements IBillable, ITrackable {
 
     public String getItemName() {
         return this.itemName;
+    }
+
+    @Override
+    public void showDetails() {
+        System.out.println("Stationery: " + itemName + ", Price: " + unitPrice);
     }
 }
 
