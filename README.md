@@ -16,4 +16,4 @@ public class RandomNumberExample {
 }
 ```
 
-networksetup -setairportpower en0 on
+networksetup -setairportpower en0 off
