@@ -15,3 +15,5 @@ public class RandomNumberExample {
     }
 }
 ```
+
+networksetup -setairportpower en0 on

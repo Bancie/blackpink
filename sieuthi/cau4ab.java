@@ -6,10 +6,10 @@ import java.util.List;
 import sieuthi.Class.Grocery;
 import sieuthi.Class.Stationery;
 
-class nhan4<T extends ITrackable> {
-    private List<T> ds = new ArrayList<>();
+class nhan4 {
+    private List<ITrackable> ds = new ArrayList<>();
 
-    public void them(T a) {
+    public void them(ITrackable a) {
         ds.add(a);
     }
 
@@ -20,7 +20,7 @@ class nhan4<T extends ITrackable> {
 
         ITrackable maxds = ds.get(0);
 
-        for (T i : ds) {
+        for (ITrackable i : ds) {
             if (i.getUnitsSold() > maxds.getUnitsSold()) {
                 maxds = i;
             }
@@ -37,7 +37,7 @@ class nhan4<T extends ITrackable> {
 
 public class cau4ab {
     public static void main(String[] args) {
-        nhan4<ITrackable> n = new nhan4<>();
+        nhan4 n = new nhan4();
         ITrackable grocery = new Grocery("Keo", 3000, 5500);
         ITrackable stationery = new Stationery("Viet", 6000, 1000);
         ITrackable stationery2 = new Stationery("Tap", 5000, 1000);
