@@ -21,7 +21,8 @@ class nhan5<T1 extends IShowable> {
         for (T1 i : ds1) {
             if (i instanceof Grocery) {
                 i.showDetails();
-            } else if (i instanceof Apparel) {
+            }
+            if (i instanceof Apparel) {
                 i.showDetails();
                 System.out.println("This is an apparel item.");
             }
