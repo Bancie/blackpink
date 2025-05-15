@@ -4,7 +4,7 @@ import sieuthi.Interface.IBillable;
 import sieuthi.Interface.IShowable;
 import sieuthi.Interface.ITrackable;
 
-public class Grocery implements IBillable, ITrackable, IShowable {
+public class Grocery<T1, T2, T3> implements IBillable<T1>, ITrackable<T2>, IShowable<T3> {
 
     private String productName;
     private double pricePerUnit;
@@ -17,17 +17,17 @@ public class Grocery implements IBillable, ITrackable, IShowable {
     }
 
     @Override
-    public double calculateTotalPrice() {
+    public T1 calculateTotalPrice() {
         return this.pricePerUnit * this.unitsSold;    
     }
     
     @Override
-    public void showDetails() {
+    public T showDetails() {
         System.out.println("Product: " + this.productName + ", Price: " + this.pricePerUnit);
     }
     
     @Override
-    public int getUnitsSold() {
+    public T getUnitsSold() {
         return this.unitsSold;
     }
 

@@ -1,5 +1,5 @@
 package sieuthi.Interface;
 
-public interface ITrackable {
-    public int getUnitsSold();
+public interface ITrackable<T> {
+    public T getUnitsSold();
 }
