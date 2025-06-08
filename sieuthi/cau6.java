@@ -9,23 +9,6 @@ import sieuthi.Class.Apparel;
 import sieuthi.Class.Grocery;
 import sieuthi.Class.Stationery;
 
-<<<<<<< HEAD
-class nhan6<T1 extends IBillable, T2 extends IBillable, T3 extends IBillable> {
-    private List<T1> ds1 = new ArrayList<>();
-    private List<T2> ds2 = new ArrayList<>();
-    private List<T3> ds3 = new ArrayList<>();
-
-    public void themGrocery(T1 a) {
-        ds1.add(a);
-    }
-
-    public void themApperal(T2 a) {
-        ds2.add(a);
-    }
-
-    public void themStationery(T3 a) {
-        ds3.add(a);
-=======
 class nhan6<T extends IBillable> {
     private List<T> ds = new ArrayList<>();
 
@@ -48,15 +31,11 @@ class nhan6<T extends IBillable> {
                 }
             }
         }
->>>>>>> parent of cdd992b (up)
     }
 }
 
 public class cau6 {
     public static void main(String[] args) {
-<<<<<<< HEAD
-
-=======
         nhan6<IBillable> n = new nhan6<>();
         IBillable grocery = new Grocery("Keo", 300, 55000);
         IBillable stationery = new Stationery("Viet", 6, 10);
@@ -65,6 +44,5 @@ public class cau6 {
         n.them(stationery);
         n.them(apperal);
         n.tonggia(500000);
->>>>>>> parent of cdd992b (up)
     }
 }
